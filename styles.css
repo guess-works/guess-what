@@ -1,0 +1,228 @@
+@import "reset.css";
+@import "video.css";
+@import "text.css";
+@import "btn.css";
+@import "invite.css";
+@import "modal.css";
+@import url("https://fonts.googleapis.com/css?family=Cherry+Swash|Emilys+Candy|Finger+Paint|Fontdiner+Swanky|Kaushan+Script|Short+Stack&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Lato:900|Creepster);
+@import url("https://fonts.googleapis.com/css?family=Kirang+Haerang:400");
+
+* {
+  box-sizing: border-box;
+}
+
+.notShowing {
+  display: none;
+}
+
+body {
+  background-color: #010100;
+  color: #020202;
+  font-family: "creepster", "Kaushan Script", cursive, "Emilys Candy", cursive,
+    "Short Stack", cursive, "Cherry Swash", cursive, "Finger Paint", cursive,
+    "Fontdiner Swanky", cursive;
+  position: relative;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.modal-content a {
+  color: black;
+}
+
+.main__video,
+.main__video__header {
+  margin: 0 auto;
+}
+
+#mainVideoPlay {
+  position: fixed;
+  margin: 0 auto;
+  top: 15vh;
+}
+
+.main__btn,
+.main__btn.pumpkin {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 30%;
+}
+
+.pulser {
+  position: relative;
+}
+.pulse {
+  z-index: 5;
+  position: absolute;
+  top: 122px;
+  left: 230px;
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pulse2 {
+  border: 5px transparent #3c3d3d;
+  animation-name: pulse2;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  -webkit-animation-name: pulse2;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-timing-function: linear;
+}
+
+.pulse3 {
+  border: 7px transparent #3c3d3d;
+  animation-name: pulse3;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  -webkit-animation-name: pulse3;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes pulse2 {
+  0% {
+    border: 5px solid #3c3d3d;
+    transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    border: 5px solid #3c3d3d;
+    transform: scale(0.2);
+    opacity: 0.7;
+  }
+  40% {
+    border: 5px solid #3c3d3d;
+    transform: scale(0.4);
+    opacity: 0.5;
+  }
+  65% {
+    border: 5px solid #3c3d3d;
+    transform: scale(0.6);
+    opacity: 0.3;
+  }
+  100% {
+    border: 5px solid #3c3d3d;
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse3 {
+  0% {
+    border: 7px solid #3c3d3d;
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  25% {
+    border: 7px solid #3c3d3d;
+    transform: scale(0.3);
+    opacity: 0.7;
+  }
+  50% {
+    border: 7px solid #3c3d3d;
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  75% {
+    border: 7px solid #3c3d3d;
+    transform: scale(0.6);
+    opacity: 0.3;
+  }
+  100% {
+    border: 7px solid #3c3d3d;
+    transform: scale(0.66);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse2 {
+  0% {
+    -webkit-border: 5px solid #3c3d3d;
+    -webkit-transform: scale(0);
+    -webkit-opacity: 0;
+  }
+  25% {
+    -webkit-border: 5px solid #3c3d3d;
+    -webkit-transform: scale(0.2);
+    -webkit-opacity: 0.7;
+  }
+  40% {
+    -webkit-border: 5px solid #3c3d3d;
+    -webkit-transform: scale(0.4);
+    -webkit-opacity: 0.5;
+  }
+  65% {
+    -webkit-border: 5px solid #3c3d3d;
+    -webkit-transform: scale(0.6);
+    -webkit-opacity: 0.3;
+  }
+  100% {
+    -webkit-border: 5px solid #3c3d3d;
+    -webkit-transform: scale(0.8);
+    -webkit-opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse3 {
+  0% {
+    -webkit-border: 7px solid #3c3d3d;
+    -webkit-transform: scale(0.1);
+    -webkit-opacity: 0;
+  }
+  25% {
+    -webkit-border: 7px solid #3c3d3d;
+    -webkit-transform: scale(0.3);
+    -webkit-opacity: 0.7;
+  }
+  50% {
+    -webkit-border: 7px solid #3c3d3d;
+    -webkit-transform: scale(0.5);
+    -webkit-opacity: 0.5;
+  }
+  75% {
+    -webkit-border: 7px solid #3c3d3d;
+    -webkit-transform: scale(0.6);
+    -webkit-opacity: 0.3;
+  }
+  100% {
+    -webkit-border: 7px solid #3c3d3d;
+    -webkit-transform: scale(0.66);
+    -webkit-opacity: 0;
+  }
+}

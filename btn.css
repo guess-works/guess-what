@@ -1,0 +1,175 @@
+.main__btn,
+.main__btn.pumpkin {
+  z-index: 3;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  animation-name: pumpkin-popup, heartBeat;
+  animation-duration: 10s, 1.3s;
+  animation-delay: 0s, 13s;
+  animation-iteration-count: 1, infinite;
+  animation-timing-function: ease-in-out, ease-in-out;
+  -webkit-animation-name: pumpkin-popup, heartBeat;
+  -webkit-animation-duration: 10s, 1.3s;
+  -webkit-animation-delay: 0s, 13s;
+  -webkit-animation-iteration-count: 1, infinite;
+  -webkit-animation-timing-function: ease-in-out, ease-in-out;
+}
+
+@keyframes pumpkin-popup {
+  0% {
+    transform: scale(0);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+  80% {
+    transform: scale(0);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+  83% {
+    transform: scale(3);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+  90% {
+    transform: scale(1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+  100% {
+    transform: scale(1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+}
+
+@-webkit-keyframes pumpkin-popup {
+  0% {
+    -webkit-transform: scale(0);
+    position: absolute;
+    margin: 0 auto;
+  }
+  80% {
+    -webkit-transform: scale(0);
+    position: absolute;
+    margin: 0 auto;
+  }
+  83% {
+    -webkit-transform: scale(3);
+    position: absolute;
+    margin: 0 auto;
+  }
+  90% {
+    -webkit-transform: scale(1);
+    position: absolute;
+    margin: 0 auto;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    position: absolute;
+    margin: 0 auto;
+  }
+}
+
+@-webkit-keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+
+  14% {
+    -webkit-transform: scale(1.1);
+    position: absolute;
+
+    margin: 0 auto;
+    transform: scale(1.1);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+
+  42% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+
+  14% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+
+  42% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    position: absolute;
+
+    margin: 0 auto;
+  }
+}
+
+#unmuteButton {
+  z-index: 100;
+  font-size: 30px;
+  color: dimgrey;
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  background-color: transparent;
+  border-style: none;
+}

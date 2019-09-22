@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Please unmute your audio</title>
+    <meta property="og:title" content="Please unmute your audio" />
+    <meta property="og:description" content="오디오 볼륨을 높여주세요" />
+    <script src="https://kit.fontawesome.com/a68ce12601.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <button id="unmuteButton">
+        <i class="fas fa-volume-up"></i>
+      </button>
+      <div id="pulser">
+        <div class="pulse pulse1"></div>
+        <div class="pulse pulse2"></div>
+        <div class="pulse pulse3"></div>
+        <div class="pulse pulse4"></div>
+      </div>
+      <div class="main__video">
+        <div class="main__video__header">
+          <div class="header__title">Trick or Treat!</div>
+          <div class="bottom__text">Tab the pumpkin to see your invitation</div>
+        </div>
+        <video id="mainVideoPlay" autoplay loop muted playsinline="true">
+          <source src="output.mp4" type="video/mp4" />
+        </video>
+        <span class="main__btn">
+          <a href="invite.html">
+            <img class="main__btn pumpkin" src="pumpkin.png"
+          /></a>
+        </span>
+      </div>
+    </main>
+    <div class="bigScreen">
+      <span class="bigScreen__text"
+        >Sorry, it's only avaiable in vertical view of your mobile devices
+        (tablets are also not available.)</span
+      >
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
